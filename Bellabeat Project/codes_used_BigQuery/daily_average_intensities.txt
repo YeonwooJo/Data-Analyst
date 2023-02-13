@@ -1,0 +1,12 @@
+SELECT
+  CAST(activity_day AS DATE) AS date,
+  AVG(sedentary_minutes) AS average_sedentary,
+  AVG(lightly_active_minutes) AS average_lightly,
+  AVG(fairly_active_minutes) AS average_fairly,
+  AVG(very_active_minutes) AS average_very,
+  COUNT(distinct id) AS number_of_users
+FROM
+  `data-analytics-370423.FitBit.daily_intensities` 
+  GROUP BY CAST(activity_day AS DATE)
+  ORDER BY activity_day
+#Generated daily intensity averages for a month

@@ -1,0 +1,10 @@
+SELECT
+  Id AS id,
+  ActivityDay AS activity_day,
+  SedentaryMinutes AS sedentary_minutes,
+  LightlyActiveMinutes AS lightly_active_minutes,
+  FairlyActiveMinutes AS fairly_active_minutes,
+  VeryActiveMinutes AS very_active_minutes,
+  #Choosing only useful COLUMNS AND renaming them according TO naming convention, overwriting TO the original TABLE
+FROM
+  `data-analytics-370423.FitBit.daily_intensities`

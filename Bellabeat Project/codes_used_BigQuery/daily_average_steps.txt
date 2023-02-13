@@ -1,0 +1,9 @@
+SELECT
+  CAST(activity_day AS DATE) AS date,
+  AVG(step_total) AS average_steps,
+  COUNT(distinct id) AS number_of_users
+FROM
+  `data-analytics-370423.FitBit.daily_steps` 
+  GROUP BY CAST(activity_day AS DATE)
+  ORDER BY activity_day
+#Generated daily step averages for a month

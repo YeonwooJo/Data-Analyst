@@ -1,0 +1,9 @@
+SELECT
+  CAST(activity_day AS DATE) AS date,
+  AVG(calories) AS average_calories,
+  COUNT(distinct id) AS number_of_users
+FROM
+  `data-analytics-370423.FitBit.daily_calories`
+  GROUP BY CAST(activity_day AS DATE)
+  ORDER BY activity_day
+#Generated daily calory averages for a month, but could not find some useful correlation

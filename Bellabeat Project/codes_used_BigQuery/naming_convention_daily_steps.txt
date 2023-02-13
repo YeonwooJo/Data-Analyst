@@ -1,0 +1,6 @@
+SELECT 
+Id AS id,
+ActivityDay AS activity_day,
+StepTOtal AS step_total,
+FROM `data-analytics-370423.FitBit.daily_steps`
+# column naming conventions for daily steps

@@ -1,0 +1,7 @@
+SELECT
+  Id AS id,
+  ActivityDay AS activity_day,
+  Calories AS calories,
+  #Changing COLUMN names INTO appropriate naming convention, overwriting to the original table
+FROM
+  `data-analytics-370423.FitBit.daily_calories`
